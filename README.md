@@ -4,7 +4,7 @@
   <head>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>ATLGAMES</title>
+    <title>My test website
     <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
     <meta property="og:title" content="Welcome to ATLGAMES, the best free website for unblocked games on the internet." />
     <meta property="og:site_name" content="ATLGAMES" />
@@ -23,10 +23,10 @@
     </h1>
     <p class="text-center"><a href="projects.html"><button id="gs">Go to games!</button></a></p>
     <p id="intro" class="text-center">
-      Welcome to ATLGAMES, the best free website for unblocked games on the internet.<br />
-      Our other domains (if this one gets blocked) <a href="otherdomains.html">HERE</a>
+      Welcome to My first wbsite im hoppething that this site never gets blocked keep this a secret
+      no games out yet but there will be soon i hope.
     </p>
-    <!-- Start Review section -->
+   
     <div class="flex-container">
       <div class="card-wrapper" css="background-color: black;">
         <div class="card text-center" css="color: black;">
@@ -43,15 +43,13 @@
           <img class="card-img-top" src="img/reviews/ATL_LOGO.png" alt="ATLHCF" />
           <div class="card-body">
             <h3>ATLHCF</h3>
-            <p class="card-text">Good website when i started using it some random homeless guy gave me 10 million dollars $$$$$!!!!</p>
+            <p class="card-text"> test 123 123 456 456 789 789 
           </div>
         </div>
       </div>
     </div>
   </div>
-    <!-- End Review section -->
-    <p class="text-center">
-      PLAY GAMES NOW <a href="projects.html">IN OUR LARGE LIBARY AND SHARE THE WEBSITE!</a>.
+    <!-- End Review section --
     </p>
     <div class="video">
     <video autoplay muted>
