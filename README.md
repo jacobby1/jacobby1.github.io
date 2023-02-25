@@ -1,2 +1,2 @@
 # jacobby1.github.io
-**me**
+**Im better than you. L loser.**
