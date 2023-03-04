@@ -6,3 +6,4 @@ this site is a shortcut to most popular sites.
 [google](https://www.google.com)
 [chess](https://www.chess.com)
 [roblox](https://www.roblox.com)
+[kahhot math game](https://kahoot.it)
