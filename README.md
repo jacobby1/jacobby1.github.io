@@ -7,3 +7,4 @@ this site is a shortcut to most popular sites.
 [chess](https://www.chess.com)
 [roblox](https://www.roblox.com)
 [kahoot math game](https://kahoot.it)
+[class link](https://launchpad.classlink.com/lwsd)
