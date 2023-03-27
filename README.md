@@ -8,4 +8,4 @@ this site is a shortcut to most popular sites.
 [roblox](https://www.roblox.com)
 [kahoot math game](https://kahoot.it)
 [class link](https://launchpad.classlink.com/lwsd)
-git clone https://github.com/jacobby1/cookieclicker.git
+git clone https://github.com/jacobby1/https://oofjerrybear.github.io/ATLGames/projects
