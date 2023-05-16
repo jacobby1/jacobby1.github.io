@@ -10,10 +10,12 @@
         function goToCookieClicker() {
             window.location.href = "https://orteil.dashnet.org/cookieclicker/";
         }
+
+        document.addEventListener("keydown", function(event) {
+            if (event.code === "Space") {
+                goToCookieClicker();
+            }
+        });
     </script>
 </body>
 </html>
-
-
-
-
