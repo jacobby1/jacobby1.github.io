@@ -1,7 +1,7 @@
 # jacobby1.github.io
 <html>
 <head>
-    <title>Go to Cookie Clicker</title>
+    <title>cookie clicker
 </head>
 <body>
     <button onclick="goToCookieClicker()">Go to Cookie Clicker</button>
