@@ -1,7 +1,7 @@
 # jacobby1.github.io
 <html>
 <head>
-    <title>Go to Offjerrybear</title>
+    <title>Go to games</title>
 </head>
 <body>
     <button onclick="goToOffjerrybear()">Go to Offjerrybear</button>
