@@ -1,16 +1,19 @@
 # jacobby1.github.io
 <html>
 <head>
-    <title>Show Picture</title>
-    <script>
-        function showPicture() {
-            document.getElementById("picture").style.display = "block";
-        }
-    </script>
+    <title>Go to Cookie Clicker</title>
 </head>
 <body>
-    <button onclick="showPicture()">Show Picture</button>
-    <br><br>
-    <img id="picture" src="path/to/your/image.jpg" style="display: none;">
+    <button onclick="goToCookieClicker()">Go to Cookie Clicker</button>
+
+    <script>
+        function goToCookieClicker() {
+            window.location.href = "https://orteil.dashnet.org/cookieclicker/";
+        }
+    </script>
 </body>
 </html>
+
+
+
+
