@@ -1,11 +1,16 @@
 # jacobby1.github.io
-
-this site is a shortcut to most popular sites. 
-[oof jerry bear](https://oofjerrybear.github.io/ATLGames/projects)
-[youtube](https://www.youtube.com)
-[google](https://www.google.com)
-[chess](https://www.chess.com)
-[roblox](https://www.roblox.com)
-[kahoot math game](https://kahoot.it)
-[class link](https://launchpad.classlink.com/lwsd)
-git clone https://github.com/jacobby1/https://oofjerrybear.github.io/ATLGames/projects
+<html>
+<head>
+    <title>Show Picture</title>
+    <script>
+        function showPicture() {
+            document.getElementById("picture").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showPicture()">Show Picture</button>
+    <br><br>
+    <img id="picture" src="path/to/your/image.jpg" style="display: none;">
+</body>
+</html>
