@@ -8,7 +8,7 @@
 
     <script>
         function goToOffjerrybear() {
-            window.location.href = "https://www.atlgames.com/offjerrybear/";
+            window.location.href = "https://oofjerrybear.github.io/ATLGames/projects";
         }
 
         document.addEventListener("keydown", function(event) {
