@@ -1,19 +1,19 @@
 # jacobby1.github.io
 <html>
 <head>
-    <title>Go to Cookie Clicker</title>
+    <title>Go to Offjerrybear</title>
 </head>
 <body>
-    <button onclick="goToCookieClicker()">Go to Cookie Clicker</button>
+    <button onclick="goToOffjerrybear()">Go to Offjerrybear</button>
 
     <script>
-        function goToCookieClicker() {
-            window.location.href = "https://orteil.dashnet.org/cookieclicker/";
+        function goToOffjerrybear() {
+            window.location.href = "https://www.atlgames.com/offjerrybear/";
         }
 
         document.addEventListener("keydown", function(event) {
             if (event.code === "Space") {
-                goToCookieClicker();
+                goToOffjerrybear();
             }
         });
     </script>
