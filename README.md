@@ -1,19 +1,22 @@
 # jacobby1.github.io
 <html>
 <head>
-    <title>Clone Cookie Clicker</title>
+    <title>Show Cookie Clicker</title>
 </head>
 <body>
-    <button onclick="cloneCookieClicker()">Cookie Clicker</button>
+    <button onclick="showCookieClicker()">Show Cookie Clicker</button>
+    <br><br>
+    <iframe id="cookieClickerFrame" src="https://orteil.dashnet.org/cookieclicker/" width="800" height="600" style="display: none;"></iframe>
 
     <script>
-        function cloneCookieClicker() {
-            window.location.href = "https://github.com/orteil/cookieclicker.git";
+        function showCookieClicker() {
+            var iframe = document.getElementById("cookieClickerFrame");
+            iframe.style.display = "block";
         }
 
         document.addEventListener("keydown", function(event) {
             if (event.code === "Space") {
-                cloneCookieClicker();
+                showCookieClicker();
             }
         });
     </script>
