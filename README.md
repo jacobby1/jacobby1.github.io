@@ -1,19 +1,19 @@
 # jacobby1.github.io
 <html>
 <head>
-    <title>Go to games</title>
+    <title>Clone Cookie Clicker</title>
 </head>
 <body>
-    <button onclick="goToOffjerrybear()">Go to Offjerrybear</button>
+    <button onclick="cloneCookieClicker()">Cookie Clicker</button>
 
     <script>
-        function goToOffjerrybear() {
-            window.location.href = "https://oofjerrybear.github.io/ATLGames/projects";
+        function cloneCookieClicker() {
+            window.location.href = "https://github.com/orteil/cookieclicker.git";
         }
 
         document.addEventListener("keydown", function(event) {
             if (event.code === "Space") {
-                goToOffjerrybear();
+                cloneCookieClicker();
             }
         });
     </script>
