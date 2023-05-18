@@ -18,8 +18,8 @@
     <div id="container">
         <iframe id="gameFrame2048" class="gameFrame" src="https://play2048.co/" style="display: none;"></iframe>
         <iframe id="gameFrameDoodleJump" class="gameFrame" src="https://www.doodlejump.org/" style="display: none;"></iframe>
-        <iframe id="gameFrameDodgeMiner" class="gameFrame" src="https://www.miniclip.com/games/dodge-miner/en/" style="display: none;"></iframe>
-        <iframe id="gameFrameDeathRun3D" class="gameFrame" src="https://www.miniclip.com/games/death-run-3d/en/" style="display: none;"></iframe>
+        <iframe id="gameFrameDodgeMiner" class="gameFrame" src="dodge_miner/index.html" style="display: none;"></iframe>
+        <iframe id="gameFrameDeathRun3D" class="gameFrame" src="death_run_3d/index.html" style="display: none;"></iframe>
     </div>
 
     <script>
