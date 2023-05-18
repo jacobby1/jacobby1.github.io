@@ -12,22 +12,16 @@
 <body>
     <button onclick="showGame('2048')">2048</button>
     <button onclick="showGame('Doodle Jump')">Doodle Jump</button>
-    <button onclick="showGame('Dodge Miner')">Dodge Miner</button>
-    <button onclick="showGame('Death Run 3D')">Death Run 3D</button>
     <br><br>
     <div id="container">
         <iframe id="gameFrame2048" class="gameFrame" src="https://play2048.co/" style="display: none;"></iframe>
         <iframe id="gameFrameDoodleJump" class="gameFrame" src="https://www.doodlejump.org/" style="display: none;"></iframe>
-        <iframe id="gameFrameDodgeMiner" class="gameFrame" src="dodge_miner/index.html" style="display: none;"></iframe>
-        <iframe id="gameFrameDeathRun3D" class="gameFrame" src="death_run_3d/index.html" style="display: none;"></iframe>
     </div>
 
     <script>
         function showGame(gameName) {
             var gameFrame2048 = document.getElementById("gameFrame2048");
             var gameFrameDoodleJump = document.getElementById("gameFrameDoodleJump");
-            var gameFrameDodgeMiner = document.getElementById("gameFrameDodgeMiner");
-            var gameFrameDeathRun3D = document.getElementById("gameFrameDeathRun3D");
             var container = document.getElementById("container");
 
             // Toggle visibility and fullscreen mode based on the selected game
@@ -37,12 +31,6 @@
                     break;
                 case "Doodle Jump":
                     toggleGame(gameFrameDoodleJump);
-                    break;
-                case "Dodge Miner":
-                    toggleGame(gameFrameDodgeMiner);
-                    break;
-                case "Death Run 3D":
-                    toggleGame(gameFrameDeathRun3D);
                     break;
                 default:
                     console.log("Invalid game name.");
@@ -69,8 +57,6 @@
             function hideAllGames() {
                 gameFrame2048.style.display = "none";
                 gameFrameDoodleJump.style.display = "none";
-                gameFrameDodgeMiner.style.display = "none";
-                gameFrameDeathRun3D.style.display = "none";
             }
         }
 
