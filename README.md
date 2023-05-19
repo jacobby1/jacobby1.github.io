@@ -3,7 +3,8 @@
 <head>
     <title>Show Games</title>
     <style>
-        .gameFrame {
+        .gameContainer {
+            display: none;
             width: 100%;
             height: 100%;
         }
@@ -14,34 +15,48 @@
     <button onclick="showGame('Doodle Jump')">Doodle Jump</button>
     <br><br>
     <div id="container">
-        <iframe id="gameFrame" class="gameFrame" src="" style="display: none;"></iframe>
+        <div id="game2048" class="gameContainer"></div>
+        <div id="gameDoodleJump" class="gameContainer"></div>
     </div>
 
     <script>
         function showGame(gameName) {
-            var gameFrame = document.getElementById("gameFrame");
-            var container = document.getElementById("container");
+            var gameContainer = document.getElementById("container");
 
-            // Set the game source URL based on the selected game
-            var gameURL;
+            // Hide all game containers
+            var gameContainers = gameContainer.getElementsByClassName("gameContainer");
+            for (var i = 0; i < gameContainers.length; i++) {
+                gameContainers[i].style.display = "none";
+            }
+
+            // Show the selected game container
+            var selectedGameContainer = document.getElementById("game" + gameName.replace(" ", ""));
+            selectedGameContainer.style.display = "block";
+
+            // Launch game logic based on the selected game
             switch (gameName) {
                 case "2048":
-                    gameURL = "https://play2048.co/";
+                    launch2048();
                     break;
                 case "Doodle Jump":
-                    gameURL = "https://www.doodlejump.org/";
+                    launchDoodleJump();
                     break;
                 default:
                     console.log("Invalid game name.");
-                    return;
+                    break;
             }
+        }
 
-            // Load the game in the iframe
-            gameFrame.src = gameURL;
-            gameFrame.style.display = "block";
-            container.requestFullscreen().catch((error) => {
-                console.log("Fullscreen mode failed to activate: " + error.message);
-            });
+        function launch2048() {
+            // Add your implementation for launching the 2048 game
+            // This could include creating the game elements, logic, and interaction using JavaScript
+            console.log("Launching 2048 game...");
+        }
+
+        function launchDoodleJump() {
+            // Add your implementation for launching the Doodle Jump game
+            // This could include creating the game elements, logic, and interaction using JavaScript
+            console.log("Launching Doodle Jump game...");
         }
 
         document.addEventListener("keydown", function(event) {
@@ -52,4 +67,3 @@
     </script>
 </body>
 </html>
-
