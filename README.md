@@ -15,12 +15,10 @@
     <br><br>
     <div id="container">
         <div id="game2048" class="gameContainer">
-            <h2>2048 Game</h2>
-            <div id="game2048Container"></div>
+            <iframe id="game2048Frame" class="gameFrame" src="" style="width: 100%; height: 100%;"></iframe>
         </div>
         <div id="gameDoodleJump" class="gameContainer">
-            <h2>Doodle Jump Game</h2>
-            <div id="gameDoodleJumpContainer"></div>
+            <iframe id="gameDoodleJumpFrame" class="gameFrame" src="" style="width: 100%; height: 100%;"></iframe>
         </div>
     </div>
 
@@ -38,37 +36,21 @@
             var selectedGameContainer = document.getElementById("game" + gameName.replace(" ", ""));
             selectedGameContainer.style.display = "block";
 
-            // Initialize the game based on the selected game name
+            // Set the source URL for the selected game
+            var gameFrame;
             switch (gameName) {
                 case "2048":
-                    initialize2048();
+                    gameFrame = document.getElementById("game2048Frame");
+                    gameFrame.src = "https://play2048.co/";
                     break;
                 case "Doodle Jump":
-                    initializeDoodleJump();
+                    gameFrame = document.getElementById("gameDoodleJumpFrame");
+                    gameFrame.src = "https://www.doodlejump.org/";
                     break;
                 default:
                     console.log("Invalid game name.");
+                    return;
             }
-        }
-
-        function initialize2048() {
-            var game2048Container = document.getElementById("game2048Container");
-
-            // Add your implementation for launching and initializing the 2048 game here
-            // Example: game2048Container.innerHTML = "<canvas id='game2048Canvas'></canvas>";
-            //          // Initialize the game logic using JavaScript
-            //          var canvas = document.getElementById("game2048Canvas");
-            //          // ... rest of the game initialization code
-        }
-
-        function initializeDoodleJump() {
-            var gameDoodleJumpContainer = document.getElementById("gameDoodleJumpContainer");
-
-            // Add your implementation for launching and initializing the Doodle Jump game here
-            // Example: gameDoodleJumpContainer.innerHTML = "<canvas id='gameDoodleJumpCanvas'></canvas>";
-            //          // Initialize the game logic using JavaScript
-            //          var canvas = document.getElementById("gameDoodleJumpCanvas");
-            //          // ... rest of the game initialization code
         }
     </script>
 </body>
