@@ -11,47 +11,31 @@
 <body>
     <button onclick="showGame('2048')">2048</button>
     <button onclick="showGame('Doodle Jump')">Doodle Jump</button>
-    <button onclick="showGame('Dodge Miner')">Dodge Miner</button>
+    <button onclick="showGame('Generic Fishing Game')">Generic Fishing Game</button>
     <br><br>
     <div id="container">
-        <iframe id="gameFrame" class="gameFrame" src="" style="display: none;"></iframe>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
     </div>
 
     <script>
         function showGame(gameName) {
-            var gameFrame = document.getElementById("gameFrame");
+            var gameCanvas = document.getElementById("gameCanvas");
             var container = document.getElementById("container");
 
-            // Set the game source URL based on the selected game
-            var gameURL;
-            switch (gameName) {
-                case "2048":
-                    gameURL = "https://play2048.co/";
-                    break;
-                case "Doodle Jump":
-                    gameURL = "https://www.doodlejump.org/";
-                    break;
-                case "Dodge Miner":
-                    gameURL = "https://example.com/dodgeminer"; // Replace with the actual URL of the "Dodge Miner" game
-                    break;
-                default:
-                    console.log("Invalid game name.");
-                    return;
-            }
+            // Hide the game frame and show the canvas
+            gameCanvas.style.display = "block";
+            container.style.display = "none";
 
-            // Load the game in the iframe
-            gameFrame.src = gameURL;
-            gameFrame.style.display = "block";
-            container.requestFullscreen().catch((error) => {
-                console.log("Fullscreen mode failed to activate: " + error.message);
-            });
+            // Start the fishing game
+            if (gameName === "Generic Fishing Game") {
+                startGenericFishingGame();
+            }
         }
 
-        document.addEventListener("keydown", function(event) {
-            if (event.code === "Space") {
-                showGame('2048');
-            }
-        });
+        function startGenericFishingGame() {
+            // Add your implementation for the generic fishing game here
+            // Use JavaScript to create the game logic, graphics, and interaction
+        }
     </script>
 </body>
 </html>
