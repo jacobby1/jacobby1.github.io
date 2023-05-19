@@ -2,9 +2,8 @@
 <head>
     <title>Show Games</title>
     <style>
-        .gameFrame {
-            width: 100%;
-            height: 100%;
+        canvas {
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -22,19 +21,19 @@
             var gameCanvas = document.getElementById("gameCanvas");
             var container = document.getElementById("container");
 
-            // Hide the game frame and show the canvas
-            gameCanvas.style.display = "block";
+            // Hide the container and show the canvas
             container.style.display = "none";
+            gameCanvas.style.display = "block";
 
             // Start the fishing game
             if (gameName === "Generic Fishing Game") {
-                startGenericFishingGame();
+                startGenericFishingGame(gameCanvas);
             }
         }
 
-        function startGenericFishingGame() {
+        function startGenericFishingGame(canvas) {
             // Add your implementation for the generic fishing game here
-            // Use JavaScript to create the game logic, graphics, and interaction
+            // Use JavaScript to create the game logic, graphics, and interaction on the canvas
         }
     </script>
 </body>
