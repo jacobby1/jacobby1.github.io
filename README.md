@@ -11,7 +11,7 @@
 <body>
     <button onclick="showGame('2048')">2048</button>
     <button onclick="showGame('Doodle Jump')">Doodle Jump</button>
-    <button onclick="showGame('Cookie Clicker')">Cookie Clicker</button>
+    <button onclick="showGame('Dodge Miner')">Dodge Miner</button>
     <br><br>
     <div id="container">
         <iframe id="gameFrame" class="gameFrame" src="" style="display: none;"></iframe>
@@ -31,8 +31,8 @@
                 case "Doodle Jump":
                     gameURL = "https://www.doodlejump.org/";
                     break;
-                case "Cookie Clicker":
-                    gameURL = "https://orteil.dashnet.org/cookieclicker/";
+                case "Dodge Miner":
+                    gameURL = "https://example.com/dodgeminer"; // Replace with the actual URL of the "Dodge Miner" game
                     break;
                 default:
                     console.log("Invalid game name.");
