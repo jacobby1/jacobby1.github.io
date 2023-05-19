@@ -1,4 +1,3 @@
-#jacobby1.github.io
 <html>
 <head>
     <title>Show Games</title>
