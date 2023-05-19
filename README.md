@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Show Games</title>
     <style>
-        canvas {
-            border: 1px solid black;
+        .gameFrame {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -12,41 +14,42 @@
     <button onclick="showGame('Doodle Jump')">Doodle Jump</button>
     <br><br>
     <div id="container">
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <iframe id="gameFrame" class="gameFrame" src="" style="display: none;"></iframe>
     </div>
 
     <script>
         function showGame(gameName) {
-            var gameCanvas = document.getElementById("gameCanvas");
+            var gameFrame = document.getElementById("gameFrame");
             var container = document.getElementById("container");
 
-            // Hide the container and show the canvas
-            container.style.display = "none";
-            gameCanvas.style.display = "block";
-
-            // Start the selected game
+            // Set the game source URL based on the selected game
+            var gameURL;
             switch (gameName) {
                 case "2048":
-                    start2048Game(gameCanvas);
+                    gameURL = "https://play2048.co/";
                     break;
                 case "Doodle Jump":
-                    startDoodleJumpGame(gameCanvas);
+                    gameURL = "https://www.doodlejump.org/";
                     break;
                 default:
                     console.log("Invalid game name.");
-                    break;
+                    return;
             }
+
+            // Load the game in the iframe
+            gameFrame.src = gameURL;
+            gameFrame.style.display = "block";
+            container.requestFullscreen().catch((error) => {
+                console.log("Fullscreen mode failed to activate: " + error.message);
+            });
         }
 
-        function start2048Game(canvas) {
-            // Add your implementation for the 2048 game here
-            // Use JavaScript to create the game logic, graphics, and interaction on the canvas
-        }
-
-        function startDoodleJumpGame(canvas) {
-            // Add your implementation for the Doodle Jump game here
-            // Use JavaScript to create the game logic, graphics, and interaction on the canvas
-        }
+        document.addEventListener("keydown", function(event) {
+            if (event.code === "Space") {
+                showGame('2048');
+            }
+        });
     </script>
 </body>
 </html>
+
