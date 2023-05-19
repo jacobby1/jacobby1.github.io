@@ -1,4 +1,4 @@
-#Welcome
+#jacobby1.github.io
 <html>
 <head>
     <title>Show Games</title>
@@ -12,6 +12,7 @@
 <body>
     <button onclick="showGame('2048')">2048</button>
     <button onclick="showGame('Doodle Jump')">Doodle Jump</button>
+    <button onclick="showGame('Cookie Clicker')">Cookie Clicker</button>
     <br><br>
     <div id="container">
         <iframe id="gameFrame" class="gameFrame" src="" style="display: none;"></iframe>
@@ -30,6 +31,9 @@
                     break;
                 case "Doodle Jump":
                     gameURL = "https://www.doodlejump.org/";
+                    break;
+                case "Cookie Clicker":
+                    gameURL = "https://orteil.dashnet.org/cookieclicker/";
                     break;
                 default:
                     console.log("Invalid game name.");
