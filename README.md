@@ -41,11 +41,11 @@
             switch (gameName) {
                 case "2048":
                     gameFrame = document.getElementById("game2048Frame");
-                    gameFrame.src = "https://jacobby1.github.io/2048";
+                    gameFrame.src = "https://your-2048-game-url.com";
                     break;
                 case "Doodle Jump":
                     gameFrame = document.getElementById("gameDoodleJumpFrame");
-                    gameFrame.src = "https://jacobby1.github.io/doodlejump";
+                    gameFrame.src = "https://your-doodle-jump-game-url.com";
                     break;
                 default:
                     console.log("Invalid game name.");
