@@ -15,10 +15,18 @@
     <br><br>
     <div id="container">
         <div id="game2048" class="gameContainer">
-            <iframe id="game2048Frame" class="gameFrame" src="" style="width: 100%; height: 100%;"></iframe>
+            <!-- Insert your 2048 game implementation here -->
+            <!-- Example: -->
+            <h1>2048 Game Implementation</h1>
+            <!-- Replace this with your actual 2048 game code -->
+            <p>Game code goes here</p>
         </div>
         <div id="gameDoodleJump" class="gameContainer">
-            <iframe id="gameDoodleJumpFrame" class="gameFrame" src="" style="width: 100%; height: 100%;"></iframe>
+            <!-- Insert your Doodle Jump game implementation here -->
+            <!-- Example: -->
+            <h1>Doodle Jump Game Implementation</h1>
+            <!-- Replace this with your actual Doodle Jump game code -->
+            <p>Game code goes here</p>
         </div>
     </div>
 
@@ -35,22 +43,6 @@
             // Show the selected game container
             var selectedGameContainer = document.getElementById("game" + gameName.replace(" ", ""));
             selectedGameContainer.style.display = "block";
-
-            // Set the source URL for the selected game
-            var gameFrame;
-            switch (gameName) {
-                case "2048":
-                    gameFrame = document.getElementById("game2048Frame");
-                    gameFrame.src = "https://your-2048-game-url.com";
-                    break;
-                case "Doodle Jump":
-                    gameFrame = document.getElementById("gameDoodleJumpFrame");
-                    gameFrame.src = "https://your-doodle-jump-game-url.com";
-                    break;
-                default:
-                    console.log("Invalid game name.");
-                    return;
-            }
         }
     </script>
 </body>
